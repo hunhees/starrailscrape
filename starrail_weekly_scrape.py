@@ -330,15 +330,15 @@ def main():
     after_sum = count_entries(cur)
 
     def check_input():
-    user_text = entry.get()
-    if user_text.upper() == 'Y':
-        conn.commit()
-        messagebox.showinfo(message="Database Committed Successfully!")
-        root.destroy()
-    elif user_text == "":
-        messagebox.showwarning(message="Empty Field")
-    else:
-        messagebox.showerror(message="Error, Enter Y to commit")
+        user_text = entry.get()
+        if user_text.upper() == 'Y':
+            conn.commit()
+            messagebox.showinfo(message="Database Committed Successfully!")
+            root.destroy()
+        elif user_text == "":
+            messagebox.showwarning(message="Empty Field")
+        else:
+            messagebox.showerror(message="Error, Enter Y to commit")
 
     root = tk.Tk()
     root.title("HSR Scraper")
