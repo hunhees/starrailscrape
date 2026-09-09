@@ -324,7 +324,7 @@ def main():
     conn.execute("PRAGMA foreign_keys = ON;")
     cur = conn.cursor()
 
-    # Most of this is just a check for 
+    # Most of this is just a check for me you could remove most of this
     before_sum = count_entries(cur)
     insert_data(export_data, conn)
     after_sum = count_entries(cur)
